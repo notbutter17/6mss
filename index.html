@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Tiempo que Vamos Juntos <3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="contador.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>El Tiempo que Vamos Juntos <3</h1>
+    <div id="contador">
+        <div class="num"><span id="dias">00</span><div class="label">Días</div></div>
+        <div class="num"><span id="horas">00</span><div class="label">Horas</div></div>
+        <div class="num"><span id="minutos">00</span><div class="label">Minutos</div></div>
+        <div class="num"><span id="segundos">00</span><div class="label">Segundos</div></div>
+    </div>
+
+    <!-- Botón para abrir el modal -->
+    <button id="abrirModal">Mostrar Mensaje</button>
+
+    <!-- Modal -->
+    <div id="miModal" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar">&times;</span>
+            <p>Se que es algo simple un contador html, es mas me tomo casi nada hacerlo o soy muy bueno o soy demasiado wn para no haber hecho más, o si?
+                Bueno lo dejamos a la duda, sin mas vueltas, procedo a decirte lo mucho que te amo, y lo mucho que me hiciste cambiar, a pesar de que amo la programacion, queria darme un break
+                de todo esto, de las cosas de la U, asi que esto es un preview porque viendolo desde un angulo ya vamos medio año juntos y sabes medio año es medio AÑO me caigo de nuca del tiempo que 
+                paso a pesar de que tal vez si contamos el "Medio Inicio" es mucho mas y puedo flexear y presumir que sigo enamorado de ti como el primer dia nada ha cambiado simplemente fue de bueno en mejor
+                y de mejor a excelentisimo y creeme que soy demasiado feliz contigo a pesar de que a veces parezca que simplemente me da igual la vida de todos, la tuya es la que mas me importa de todos mi circulo
+                la unica que me importa eres tu, chiquilla especial, esto no va a ser una carta triste y mucho menos de esa que te dan ganas de tirarte del balcon de tu depa o mansion, NAAA esta que sea la feliz que sea
+                la diferente la unica la inigualable que tenga ese toque tan especial, tan suculento, asi que solo decirte que mi mayor miedo en un momento fue que solo me habia enganchado de lo fisico contigo y que practicamente
+                involucrarme sentimentalmente iba a ser imposible, pero, mirame enamorado de tu cuerpo, mente, alma y corazon; ponte en mi lugar el meo afortunado que me siento a tu lado y a pesar de que tal vez existieron 1000 criticas
+                de que no debia y no podia estar contigo, ahora mismo no es por mufarla pero siento que somos una pareja de la reparimpampum, esa pareja que la ves y te quedas muerto de envidia, y no lo digo yo lo dicen las stats ndeaaah xd, pero si,
+                simplemente cada cosa que escucho de NOSOTROS es a veces tan ridicula como las personas que lo dicen Zzz, fuera de ello, esto no es darle credito a esos muertos de hambre, esto es algo mas de un sentimiento de felicidad por llegar a los 6 neses
+                me siento bendecido contigo a mi lado, hay momentos donde me cuestionaba QUE HAGO EN LA UPEU? ponte que mi circulo social tiro para Arequipa y Lima y practimente yo me quedé fuera de que me gusta no ser reconocido con mis malas
+                juntas, me pongo en el lado de que Dios tiene un proposito para cada uno, y bueno, si te conte esa situacion que vivi en Lima ese limbo, y se que contigo como mi apoyo emocional y espiritual, me doy cuenta que muchas veces he vivido tal vez en ignorancia,
+                pero cuando decides corregirme a tu forma me doy cuenta y procuro no repetir esas situaciones y te juro que con lo que me quedo es que me ayudaste a abrir los ojos espiritualmente, gracias por ayudarme a ver las cosas como muy pocos deciden verlo, gracias por insitarme a ser un chico
+                mas tranqui mas enfocado y mas maduro, de verdad a veces se me sale el pequeño demonio pero me das un PARE que me siento FELI de verdad, gracias por ayudarme.
+            </p>
+            <p>
+                Fuera de ello, tambien agradecerte por ser un amor de chica y volverte a ganar mi confianza algo que creo q si te dije es que en un inicio desconfiaba de ti por ya sabes, pero de verdad a lo largo de las horas, dias, semanas y meses supiste ganarte toda mi confianza, no podria 
+                estar mas feliz de saber que hay cosas que no sabia de ti y aunque no me creas me encantan y otras muchas las cuales me sorprenden y me dan ganas de mejorar como persona para poder seguirte el ritmo btw u know, u r the best girlfriend in this world. Continuando, esta situacion un tanto situacional
+                Quisiera poder decir más pero dejemoslo a mi asociado del boton de abajo JAAAAA
+            </p>
+            <!-- Botón para mostrar el contador hasta el 21 de junio -->
+            <button id="mostrarContador">Sorpresa hasta dentro de </button>
+            <!-- Contador animado -->
+            <div id="contadorHasta21" class="contador-animado" style="display: none;">
+                <span id="diasHasta21">00</span> Días restantes hasta el 21 de junio
+            </div>
+        </div>
+    </div>
+
+    <!-- Iconos de reloj de arena flotantes -->
+    <picture>
+        <source srcset="Reloj_de_Arena_Brillante.webp" type="image/webp">
+        <img src="Reloj_de_Arena_Brillante.webp" alt="Reloj de arena" class="reloj-float">
+    </picture>
+    
+    <picture>
+        <source srcset="Reloj_de_Arena_Brillante.webp" type="image/webp">
+        <img src="Reloj_de_Arena_Brillante.webp" alt="Reloj de arena" class="reloj-float">
+    </picture>
+    
+    <picture>
+        <source srcset="Reloj_de_Arena_Brillante.webp" type="image/webp">
+        <img src="Reloj_de_Arena_Brillante.webp" alt="Reloj de arena" class="reloj-float">
+    </picture>
+    
+    
+    <script src="contador.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#contador {
+    display: flex;
+}
+
+.num {
+    margin: 0 10px; /* Espaciado más pequeño para pantallas pequeñas */
+    text-align: center;
+}
+
+/* Aumentar el tamaño de los números del contador */
+.num span {
+    display: inline-block;
+    font-size: 4em; /* Aumentar el tamaño de los números */
+}
+
+.label {
+    font-size: 3em; /* Tamaño de la etiqueta */
+}
+
+/* Estilo del botón */
+#abrirModal, #mostrarContador {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: red; /* Color similar a Netflix */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Estilo del modal */
+.modal {
+   display: none; 
+   position: fixed; 
+   z-index: 1; 
+   left: 0;
+   top: 0;
+   width: 100%; 
+   height: 100%; 
+   background-color: rgba(0,0,0,0.8);
+}
+
+.modal-contenido {
+   background-color: #222; 
+   margin: 15% auto; 
+   padding: 20px;
+   border-radius: 10px; 
+   width: 80%; 
+}
+
+.cerrar {
+   color: #aaa;
+   float: right;
+   font-size: 28px;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+   color: white; 
+}
+
+.contador-animado {
+   margin-top: 20px;
+   font-size: 2.5em; 
+   transition: opacity 0.5s ease-in-out; 
+   text-align:center; 
+   background-color:#444; 
+   padding:10px; 
+   border-radius:10px; 
+}
+
+/* Animación para los relojes de arena flotantes */
+@keyframes floatAnimation {
+   0% { transform: translateY(0); }
+   to { transform: translateY(-20px); }
+}
+
+/* Animación para que los relojes se muevan por la pantalla */
+@keyframes moveAround {
+   0% { transform: translate(0, 0); }
+   25% { transform: translate(50vw, -50vh); }
+   50% { transform: translate(-50vw, -30vh); }
+   75% { transform: translate(30vw, -70vh); }
+   100% { transform: translate(0, -100vh); }
+}
+
+/* Relojes de arena flotantes */
+.reloj-float {
+   position:absolute; 
+   width:50px; 
+   animation-name: moveAround; /* Cambiar a moveAround */
+   animation-duration :10s; /* Duración total del movimiento */
+   animation-timing-function :ease-in-out ; 
+   animation-iteration-count :infinite ; 
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em; /* Tamaño más pequeño para encabezados en móviles */
+    }
+
+    #contador {
+        flex-direction: column; /* Colocar los números uno debajo del otro */
+        align-items: center; /* Centrar los elementos */
+        margin-bottom: 20px; /* Espacio adicional debajo del contador */
+    }
+
+    .num {
+        margin-bottom: 10px; /* Espaciado entre números en móviles */
+        font-size: 3em; /* Tamaño más pequeño para números en móviles */
+    }
+
+    #abrirModal, #mostrarContador {
+        width: 90%; /* Botones más anchos en móviles */
+        padding: 15px; /* Más espacio interno en botones */
+        font-size: 1.2em; /* Tamaño de fuente más grande para botones en móviles */
+    }
+}
